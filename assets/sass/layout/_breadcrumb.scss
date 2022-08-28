@@ -1,0 +1,40 @@
+/* Breadcrumb Section */
+.breadcrumb-section {
+    padding: 150px 0;
+    background-image: url('../images/breadcrumb-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @include tablet {
+        padding: 120px 0;
+    }
+
+    @include landscape-phone {
+        padding: 120px 0;
+    }
+
+    @include portrait-phone {
+        padding: 120px 0;
+    }
+
+    ul {
+        margin-top: 10px;
+
+        li {
+            display: inline-block;
+            text-transform: capitalize;
+            font-size: 20px;
+            margin: 0 2px;
+
+            a {
+                color: $paragraph-color;
+                transition: $transition;
+
+                &:hover {
+                    color: $secondary-color;
+                }
+            }
+        }
+    }
+}

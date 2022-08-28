@@ -1,0 +1,133 @@
+/* Header Section */
+.header-section {
+    .topbar-area {
+        padding: 15px 0;
+        background-color: $primary-color;
+
+        @include tablet {
+            text-align: center;
+        }
+
+        @include landscape-phone {
+            text-align: center;
+        }
+
+        @include portrait-phone {
+            text-align: center;
+        }
+
+        a {
+            color: $white-color;
+
+            span {
+                margin-right: 5px;
+            }
+        }
+
+        .margin-left {
+            margin-left: 30px;
+        }
+
+        .topbar-button {
+            text-align: right;
+
+            @include tablet {
+                text-align: center;
+                margin-top: 10px;
+            }
+
+            @include landscape-phone {
+                text-align: center;
+                margin-top: 10px;
+            }
+
+            @include portrait-phone {
+                text-align: center;
+                margin-top: 10px;
+            }
+        }
+    }
+
+    .menu-area {
+        position: relative;
+        padding: 10px 0;
+        z-index: 9;
+
+        @include tablet {
+            padding: 0;
+        }
+
+        @include landscape-phone {
+            padding: 0;
+        }
+
+        @include portrait-phone {
+            padding: 0;
+        }
+
+        box-shadow: 0px 3px 10px rgba(0, 0, 0, .1);
+
+        .logo-area {
+            img {
+                position: absolute;
+                top: -43px;
+
+                @include tablet {
+                    position: inherit;
+                }
+
+                @include landscape-phone {
+                    position: inherit;
+                }
+
+                @include portrait-phone {
+                    position: inherit;
+                }
+            }
+        }
+
+        .menu-btn {
+
+            @include tablet {
+                display: none;
+            }
+
+            @include landscape-phone {
+                display: none;
+            }
+
+            @include portrait-phone {
+                display: none;
+            }
+
+            margin: 0;
+
+            a {
+                color: $white-color;
+                font-size: 16px;
+                font-weight: 500;
+                text-transform: capitalize;
+                display: inline-block;
+                padding: 14px 40px;
+                background-color: $secondary-color;
+                transition: $transition;
+                border-radius: 5px;
+
+                &:hover {
+                    color: $white-color;
+                    background-color: $primary-color;
+                }
+
+                &:before {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+.header-section.header-section-3 {
+    .topbar-area {
+        background-color: $secondary-color;
+    }
+}
