@@ -43,6 +43,23 @@
     }
 }
 
+.login-form {
+    form {
+
+        input {
+            padding: 15px 30px;
+            width: 100%;
+            margin-bottom: 30px;
+            border: 1px solid $border-color;
+        }
+
+        button {
+            border: 1px solid transparent;
+            width: 100%;
+        }
+    }
+}
+
 .widget-search {
     form {
         width: 100%;

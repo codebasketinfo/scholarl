@@ -29,6 +29,7 @@ TABLE OF CONTENTS:
 >> Blog Details Page
 >> Course Details Page
 >> Contact Page
+>> Login Page
 --------------------------------------------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
 /* Author CSS */
@@ -606,6 +607,16 @@ nav {
   height: 200px; }
 
 .contact-form form button {
+  border: 1px solid transparent;
+  width: 100%; }
+
+.login-form form input {
+  padding: 15px 30px;
+  width: 100%;
+  margin-bottom: 30px;
+  border: 1px solid #eaeaea; }
+
+.login-form form button {
   border: 1px solid transparent;
   width: 100%; }
 
@@ -2461,3 +2472,21 @@ nav {
 @media (max-width: 575.98px) {
   .contact-section .google-map {
     margin-top: 60px; } }
+
+/* Login Page */
+.login-page span.or {
+  display: block;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 10px 0; }
+
+.login-page .login-facebook {
+  background-color: #3b5999;
+  width: 100%;
+  display: inline-block; }
+
+.login-page .login-google {
+  background-color: #F3B605;
+  width: 100%;
+  display: inline-block;
+  margin-top: 30px; }
