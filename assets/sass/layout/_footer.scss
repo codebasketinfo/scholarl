@@ -75,6 +75,16 @@
             text-align: center;
         }
 
+        .copyright-left {
+            a {
+                color: $secondary-color;
+
+                &:hover {
+                    color: $secondary-color;
+                }
+            }
+        }
+
         .copyright-links {
             text-align: right;
 
